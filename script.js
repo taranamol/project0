@@ -10,6 +10,20 @@ $(function() {
   //element to hold list of todos
   var $listPosts = $("#listOfPosts");
 
+   //model of seed data 
+  var tasks = [
+  {title: "Sprinkles", description: "cat", image: "2015-07-01"},
+  {title: "Bagel", description: "dog", image: "2015-07-02"},
+  {title: "Fluffy", description: "dinosaur", image: "2015-07-03"}
+  ];
+
+  //append existing seed data to html
+  _.each(tasks, function (task, index) {
+    var $task = $(postTemplate(task));
+    $task.attr('data-index', index);
+    $listPosts.append($task)
+  });
+
   //constructor function 
   function blogPost (title, description, image) {
     this.title = title;
