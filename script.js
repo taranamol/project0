@@ -11,11 +11,11 @@ $(function() {
   var $listPosts = $("#listOfPosts");
 
    //model of seed data 
-  var tasks = [
-  {title: "madrid, spain", description: "this restaurant was amazing! great vegetarian choices."},
-  {title: "lisbon, portugal", description: "great meal to start off our foodventures! never knew what sweet potatoes could be!"},
-  {title: "florence, italy", description: "lovedd risotto! can't find it anywhere but italy!"}
-  ];
+   var tasks = [
+   {title: "madrid, spain", description: "this restaurant was amazing! great vegetarian choices."},
+   {title: "lisbon, portugal", description: "great meal to start off our foodventures! never knew what sweet potatoes could be!"},
+   {title: "florence, italy", description: "lovedd risotto! can't find it anywhere but italy!"}
+   ];
 
   //append existing seed data to html
   _.each(tasks, function (task, index) {
@@ -39,16 +39,16 @@ $(function() {
     console.log(this);
   };
 
- 
+  
   blogPost.prototype.render = function() {
     // _.each(ToDo.all, function (task, index) {
-    var $post = $(postTemplate(this));
+      var $post = $(postTemplate(this));
     // $task.attr('data-index', index);
     $listPosts.append($post)
     console.log("render works")
     // });
-  }
-  
+}
+
     //listens to the click for the submit
     $newFormPost.on("submit", function(event) {
       event.preventDefault();
@@ -72,10 +72,10 @@ $(function() {
       // //this is for the to do list items that newly added in
       var $listItems = $("#listOfPosts .post"); 
       $listItems.click(function (event) {
-      event.preventDefault();
-      $(this).addClass("done");
-       }) 
+        event.preventDefault();
+        $(this).addClass("done");
+      }) 
 
-      });
+    });
 
-});
+  });
