@@ -12,9 +12,9 @@ $(function() {
 
    //model of seed data 
   var tasks = [
-  {title: "Sprinkles", description: "cat", image: "2015-07-01"},
-  {title: "Bagel", description: "dog", image: "2015-07-02"},
-  {title: "Fluffy", description: "dinosaur", image: "2015-07-03"}
+  {title: "madrid, spain", description: "this restaurant was amazing! great vegetarian choices.", image: "2015-07-01"},
+  {title: "lisbon, portugal", description: "great meal to start off our foodventures! never knew what sweet potatoes could be!", image: "2015-07-02"},
+  {title: "florence, italy", description: "lovedd risotto! can't find it anywhere but italy!", image: "2015-07-03"}
   ];
 
   //append existing seed data to html
@@ -28,7 +28,7 @@ $(function() {
   function blogPost (title, description, image) {
     this.title = title;
     this.description = description;
-    this.image = image;
+    // this.image = image;
   };
 
   //variable to hold all of the instances

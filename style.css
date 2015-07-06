@@ -11,6 +11,11 @@
 }
 
 #backgroundPost {
-  background-color: #FF2D00;
+  background-color: #F6FAFA;
+  color: #FF2D00;
 }
 
+.carousel-inner img {
+  width: 1000px; 
+  height: auto;
+}
