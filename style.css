@@ -19,3 +19,15 @@
   width: 1000px; 
   height: auto;
 }
+
+h1 {
+  font-family: 'Lucida Grande';
+  font-size: 40px;
+  font-style: normal;
+  }
+
+  h2 {
+  font-family: 'Lucida Grande';
+  font-size: 38px;
+  font-style: normal;
+  }

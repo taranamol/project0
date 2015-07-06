@@ -12,9 +12,9 @@ $(function() {
 
    //model of seed data 
   var tasks = [
-  {title: "madrid, spain", description: "this restaurant was amazing! great vegetarian choices.", image: "2015-07-01"},
-  {title: "lisbon, portugal", description: "great meal to start off our foodventures! never knew what sweet potatoes could be!", image: "2015-07-02"},
-  {title: "florence, italy", description: "lovedd risotto! can't find it anywhere but italy!", image: "2015-07-03"}
+  {title: "madrid, spain", description: "this restaurant was amazing! great vegetarian choices."},
+  {title: "lisbon, portugal", description: "great meal to start off our foodventures! never knew what sweet potatoes could be!"},
+  {title: "florence, italy", description: "lovedd risotto! can't find it anywhere but italy!"}
   ];
 
   //append existing seed data to html
@@ -56,16 +56,16 @@ $(function() {
       console.log('post submitted!'); //printing that the submit button was clicked
       console.log($('#postTitle').val() ); //to do list info
       console.log($('#postDesc').val() );
-      console.log($('#postImg').val() );
+      // console.log($('#postImg').val() );
       
       // create new todo object from form data
       var postTitle = $('#postTitle').val();
       var postDesc = $('#postDesc').val();
-      var postImg = $('#postImg').val();
+      // var postImg = $('#postImg').val();
       // var toDoData = {title: toDoName, description: toDoDesc, date: toDoDate};
       
       //this is test data pre-loaded to the HTML
-      var post1 = new blogPost(postTitle, postDesc, postImg);
+      var post1 = new blogPost(postTitle, postDesc);
       post1.save();
       post1.render();
 
